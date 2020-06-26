@@ -1,26 +1,30 @@
 {
-	"name": "aw-studio/dashboard",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "cbl",
-			"email": "lennart.carbe@gmail.com"
-		}
-	],
-	"require": {},
-	"autoload": {
-		"psr-4": {
-			"AwStudio\\Dashboard\\": "src/"
-		},
-		"files": [
-			"src/Support/helpers.php"
-		]
-	},
-	"extra": {
-		"laravel": {
-			"providers": [
-				"AwStudio\\Dashboard\\DashboardServiceProvider"
-			]
-		}
-	}
+    "name": "aw-studio/dashboard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cbl",
+            "email": "lennart.carbe@gmail.com"
+        }
+    ],
+    "require": {
+        "livewire/livewire": "^1.2",
+        "cbl/blade-script": "^0.0.4",
+        "cbl/blade-style": "^0.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AwStudio\\Dashboard\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AwStudio\\Dashboard\\DashboardServiceProvider"
+            ]
+        }
+    }
 }
