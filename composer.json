@@ -1,0 +1,26 @@
+{
+	"name": "aw-studio/dashboard",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "cbl",
+			"email": "lennart.carbe@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"AwStudio\\Dashboard\\": "src/"
+		},
+		"files": [
+			"src/Support/helpers.php"
+		]
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"AwStudio\\Dashboard\\DashboardServiceProvider"
+			]
+		}
+	}
+}
